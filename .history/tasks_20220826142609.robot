@@ -23,6 +23,7 @@ ${RECEIPT_FOLDER}       ${CURDIR}${/}receipts
 ${SCREENSHOT_FOLDER}    ${CURDIR}${/}screenshot
 ${RESULT_FOLDER}        ${CURDIR}${/}result
 ${CONFIRM}              ${False}
+${SECRET}=              Get Secret    Credentials
 
 
 *** Tasks ***
@@ -62,7 +63,6 @@ Dialog as progress indicator
 
 Open the robot order website
     [Documentation]    open the target website and click the pop up
-    ${SECRET}=    Get Secret    Credentials
     Dialog as progress indicator    ${SECRET}[url]
     # Click Button    OK
 

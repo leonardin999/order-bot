@@ -63,7 +63,7 @@ Dialog as progress indicator
 Open the robot order website
     [Documentation]    open the target website and click the pop up
     ${SECRET}=    Get Secret    Credentials
-    Dialog as progress indicator    ${SECRET}[url]
+    Dialog as progress indicator    ${SECRET}\[url]
     # Click Button    OK
 
 Confirmation dialog
